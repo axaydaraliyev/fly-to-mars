@@ -44,97 +44,95 @@
       </div>
 
       <div class="form-satart">
-          <!-- 1-qism  -->
-          <form class="form">
-            <fieldset class="form-container">
-              <!-- fish  -->
-              <legend>Shaxsiy ma'lumotlar.</legend>
-              <label for="name">F.I.SH:</label>
-              <input type="text" id="name" name="name" required />
+        <!-- 1-qism  -->
+        <form class="form" action="https://echo.htmlacademy.ru/" method="post">
+          <fieldset class="form-container">
+            <legend>Shaxsiy ma'lumotlar.</legend>
 
-              <!-- yoshi  -->
+            <label for="name">F.I.SH:</label>
+            <input type="text" id="name" name="name" required />
 
-              <label for="age">Yoshingiz:</label>
-              <input
-                type="number"
-                id="age"
-                placeholder="Yoshingizni kiriting"
-                min="12"
-                max="70"
-                required
-                width="100px" />
+            <label for="age">Yoshingiz:</label>
+            <input
+              type="number"
+              id="age"
+              name="age"
+              placeholder="Yoshingizni kiriting"
+              min="12"
+              max="70"
+              required />
 
-              <!-- tugilgan sansi  -->
-              <label for="brith"> Tug'ilgan kun</label>
-              <input
-                type="date"
-                id="brith"
-                name="brith"
-                placeholder="Tugilgan sanangizni kiriting"
-                required />
+            <label for="brith"> Tug'ilgan kun</label>
+            <input type="date" id="brith" name="brith" required />
+            <button type="submit">Yuborish</button>
+          </fieldset>
+        </form>
 
-              <button type="submit">Yuborish</button>
-            </fieldset>
-          </form>
-          <!-- 2-qismi  -->
-          <form class="form">
-            <fieldset class="person-form">
-              <legend>Umumiy ma'lumotlar</legend>
+        <!-- 2-qismi  -->
+        <form
+          class="form"
+          action="https://echo.htmlacademy.ru/"
+          method="post">
+          <fieldset class="person-form">
+            <legend>Umumiy ma'lumotlar</legend>
 
-              <label for="region">Tug‘ilgan viloyati:</label>
-              <select id="region" name="region" required>
-                <option value="">Tanlang</option>
-                <option value="toshkent">Toshkent</option>
-                <option value="andijon">Andijon</option>
-                <option value="namangan">Namangan</option>
-                <option value="fargona">Farg‘ona</option>
-                <option value="samarqand">Samarqand</option>
-                <option value="buxoro">Buxoro</option>
-                <option value="xorazm">Xorazm</option>
-                <option value="qashqadaryo">Qashqadaryo</option>
-                <option value="surxondaryo">Surxondaryo</option>
-                <option value="jizzax">Jizzax</option>
-                <option value="navoiy">Navoiy</option>
-                <option value="sirdaryo">Sirdaryo</option>
-              </select>
+            <label for="region">Tug‘ilgan viloyati:</label>
+            <select id="region" name="region" required>
+              <option value="">Tanlang</option>
+              <option value="toshkent">Toshkent</option>
+              <option value="andijon">Andijon</option>
+              <option value="namangan">Namangan</option>
+              <option value="fargona">Farg‘ona</option>
+              <option value="samarqand">Samarqand</option>
+              <option value="buxoro">Buxoro</option>
+              <option value="xorazm">Xorazm</option>
+              <option value="qashqadaryo">Qashqadaryo</option>
+              <option value="surxondaryo">Surxondaryo</option>
+              <option value="jizzax">Jizzax</option>
+              <option value="navoiy">Navoiy</option>
+              <option value="sirdaryo">Sirdaryo</option>
+            </select>
 
-              <label for="city">Tug‘ilgan shahri:</label>
-              <input type="text" id="city" name="city" required />
+            <label for="city">Tug‘ilgan shahri:</label>
+            <input type="text" id="city" name="city" required />
 
-              <label for="hobby">Hobbylari:</label>
-              <input type="text" id="hobby" name="hobby" />
+            <label for="hobby">Hobbylari:</label>
+            <input type="text" id="hobby" name="hobby" />
 
-              <label for="budget">Budjeti (UZS):</label>
-              <input type="number" id="budget" name="budget" min="0" />
-              <label for="with-whom">Kimlar bilan uchmoqchi?</label>
-              <input type="text" id="with-whom" name="with-whom" />
-              <button type="submit">Yuborish</button>
-            </fieldset>
-          </form>
-          <!-- 3-qismi -->
-          <form class="form">
-            <fieldset class="mars-form">
-              <legend>Mars haqida savollar.</legend>
-              <!-- sabab  -->
-              <label for="reason">Nima uchun Marsga uchmoqchi?</label>
-              <textarea id="reason" name="reason"></textarea>
-              <!-- oldin uchganmi  -->
-              <label for="flown-before">Oldin Marsga uchganmi?</label>
-              <select id="flown-before" name="flown-before">
-                <option value="yes">Kiriting</option>
-                <option value="yes">Ha</option>
-                <option value="no">Yo‘q</option>
-              </select>
-              <!-- kim bilan  -->
-              <label for="knowledge">Mars haqida bilgani:</label>
-              <textarea id="knowledge" name="knowledge"></textarea>
-              <!-- qachon  -->
-              <label for="when">Qachon uchmoqchi?</label>
-              <input type="date" id="when" name="when" />
-              <!-- yuborish  -->
-              <button type="submit">Yuborish</button>
-            </fieldset>
-          </form>
+            <label for="budget">Budjeti (UZS):</label>
+            <input type="number" id="budget" name="budget" min="0" />
+            <label for="with-whom">Kimlar bilan uchmoqchi?</label>
+            <input type="text" id="with-whom" name="with-whom" />
+            <button type="submit">Yuborish</button>
+          </fieldset>
+        </form>
+        <!-- 3-qismi -->
+        <form
+          class="form"
+          action="https://echo.htmlacademy.ru/"
+          method="post">
+          <fieldset class="mars-form">
+            <legend>Mars haqida savollar.</legend>
+            <!-- sabab  -->
+            <label for="reason">Nima uchun Marsga uchmoqchi?</label>
+            <textarea id="reason" name="reason"></textarea>
+            <!-- oldin uchganmi  -->
+            <label for="flown-before">Oldin Marsga uchganmi?</label>
+            <select id="flown-before" name="flown-before">
+              <option value="yes">Kiriting</option>
+              <option value="yes">Ha</option>
+              <option value="no">Yo‘q</option>
+            </select>
+            <!-- kim bilan  -->
+            <label for="knowledge">Mars haqida bilgani:</label>
+            <textarea id="knowledge" name="knowledge"></textarea>
+            <!-- qachon  -->
+            <label for="when">Qachon uchmoqchi?</label>
+            <input type="date" id="when" name="when" />
+            <!-- yuborish  -->
+            <button type="submit">Yuborish</button>
+          </fieldset>
+        </form>
       </div>
     </div>
   </body>
