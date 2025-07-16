@@ -1,0 +1,227 @@
+body {
+  color: #f4f1f1;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.matn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* header qismi full  */
+.header {
+  border: 2px solid #f4f1f1;
+  display: flex;
+  align-items: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 10;
+  padding-right: 10px;
+  border-radius: 7px;
+  margin: 2px;
+  backdrop-filter: blur(1px);
+}
+.forimage {
+  background-image: url(./img/imgforweb.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  text-transform: initial;
+}
+ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+li {
+  font-size: 24px;
+  font-weight: bold;
+  /* background:rgba(44, 35, 216, 0.6);  */
+  color: #f8f8f8;
+  border-radius: 8px;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: bold;
+  background: rgba(22, 175, 192, 0.6);
+  border-radius: 50%;
+}
+
+.navbar a {
+  color: #f4f1f1;
+  font-weight: 500;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #29040a;
+  text-shadow: #f8f8f8;
+  transition: 0.3s ease;
+}
+
+/* Burger menyu boshlanishi */
+#menu-toggle {
+  display: none;
+}
+
+.burger {
+  display: none;
+  font-size: 32px;
+  cursor: pointer;
+  color: white;
+  z-index: 20;
+}
+
+/* responsiv - 786px dan kichik */
+
+@media (max-width: 600px) {
+  .navbar {
+    display: none;
+    position: absolute;
+    top: 60%;
+    right: 10px;
+    background: rgba(22, 175, 192, 0.6);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    width: 150px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+  }
+  /* rgba(61, 59, 97, 0.9);  */
+
+  #menu-toggle:checked + .burger + .navbar {
+    display: flex;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  li {
+    width: 100%;
+    text-align: center;
+  }
+  /* responsiv tugadi  */
+
+  .header-container {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+/* form  */
+.form {
+  margin-left: 60px;
+  margin-right: 60px;
+}
+.form-container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  margin-top: 10px;
+}
+.cta-container {
+  background-image: url(./img/fotonone2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: auto;
+  background-attachment: fixed;
+}
+
+.person-form {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  margin-top: 10px;
+}
+.mars-form {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  margin-top: 10px;
+}
+/* form ga stayl  */
+.form {
+  max-width: 900px;
+  margin: 20px auto;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+fieldset {
+  border: 1px solid white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+label {
+  font-weight: bold; 
+  color: white;
+}
+
+input, select, textarea, button {
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+/* button uchun syle */
+button {
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  max-width: 120px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button:hover {
+  background-color: #3e3838;
+  color: #ccc;
+}
