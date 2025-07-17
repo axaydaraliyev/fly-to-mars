@@ -12,46 +12,46 @@
     <meta name="author" content="Marsga uchirish MCHJ" />
   </head>
   <body>
-    <!-- Header qismi  -->
     <div class="forimage">
       <header class="header header-container">
         <a class="logo" href="index.html">
           <img src="./img/forlogo.svg" alt="logo" width="227" height="60" />
         </a>
-        <!-- Burger menyu -->
         <input type="checkbox" id="menu-toggle" />
         <label for="menu-toggle" class="burger">&#9776;</label>
-        <!-- Navbar -->
-        <ul class="navbar">
-          <li><a href="#">Bosh sahifa</a></li>
-          <li><a href="#">Biz haqimizda</a></li>
-          <li><a href="#">Xizmatlar</a></li>
-          <li><a href="#">Aloqa</a></li>
-        </ul>
+        <nav>
+          <ul class="navbar">
+            <li><a href="#">Bosh sahifa</a></li>
+            <li><a href="#">Biz haqimizda</a></li>
+            <li><a href="#">Xizmatlar</a></li>
+            <li><a href="#">Aloqa</a></li>
+          </ul>
+        </nav>
       </header>
     </div>
 
-    <!-- cta  -->
-
-    <div class="cta-container">
-      <div class="matn">
+    <main class="cta-container">
+      <section class="matn">
         <h1>Marsga uchirish MCHJ</h1>
         <p>
           Bizning maqsadimiz - insoniyatni Marsga uchirish va yangi imkoniyatlar
           yaratish. Biz bilan birga uchmoqchi bolsangiz pastdagi formani
           toldring va biz bilan birga Marsga uchung.
         </p>
-      </div>
-
-      <div class="form-satart">
-        <!-- 1-qism  -->
+      </section>
+      <!-- 1-qisim  -->
+      <section class="form-satart">
         <form class="form" action="https://echo.htmlacademy.ru/" method="post">
           <fieldset class="form-container">
             <legend>Shaxsiy ma'lumotlar.</legend>
-
             <label for="name">F.I.SH:</label>
-            <input type="text" id="name" name="name" required />
-
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              minlength="3"
+              maxlength="40" />
             <label for="age">Yoshingiz:</label>
             <input
               type="number"
@@ -61,21 +61,15 @@
               min="12"
               max="70"
               required />
-
-            <label for="brith"> Tug'ilgan kun</label>
+            <label for="brith">Tug'ilgan kun</label>
             <input type="date" id="brith" name="brith" required />
             <button type="submit">Yuborish</button>
           </fieldset>
         </form>
-
-        <!-- 2-qismi  -->
-        <form
-          class="form"
-          action="https://echo.htmlacademy.ru/"
-          method="post">
+        <!-- 2-qisim  -->
+        <form class="form" action="https://echo.htmlacademy.ru/" method="post">
           <fieldset class="person-form">
             <legend>Umumiy ma'lumotlar</legend>
-
             <label for="region">Tug‘ilgan viloyati:</label>
             <select id="region" name="region" required>
               <option value="">Tanlang</option>
@@ -92,48 +86,62 @@
               <option value="navoiy">Navoiy</option>
               <option value="sirdaryo">Sirdaryo</option>
             </select>
-
             <label for="city">Tug‘ilgan shahri:</label>
             <input type="text" id="city" name="city" required />
-
             <label for="hobby">Hobbylari:</label>
-            <input type="text" id="hobby" name="hobby" />
-
+            <input
+              type="text"
+              id="hobby"
+              name="hobby"
+              minlength="10"
+              maxlength="200" />
             <label for="budget">Budjeti (UZS):</label>
-            <input type="number" id="budget" name="budget" min="0" />
+            <input type="number" id="budget" name="budget" min="5" />
             <label for="with-whom">Kimlar bilan uchmoqchi?</label>
-            <input type="text" id="with-whom" name="with-whom" />
+            <input
+              type="text"
+              id="with-whom"
+              name="with-whom"
+              minlength="3"
+              maxlength="20" />
             <button type="submit">Yuborish</button>
           </fieldset>
         </form>
-        <!-- 3-qismi -->
-        <form
-          class="form"
-          action="https://echo.htmlacademy.ru/"
-          method="post">
+        <!-- 3-qisim  -->
+        <form class="form" action="https://echo.htmlacademy.ru/" method="post">
           <fieldset class="mars-form">
             <legend>Mars haqida savollar.</legend>
-            <!-- sabab  -->
             <label for="reason">Nima uchun Marsga uchmoqchi?</label>
             <textarea id="reason" name="reason"></textarea>
-            <!-- oldin uchganmi  -->
             <label for="flown-before">Oldin Marsga uchganmi?</label>
             <select id="flown-before" name="flown-before">
               <option value="yes">Kiriting</option>
               <option value="yes">Ha</option>
               <option value="no">Yo‘q</option>
             </select>
-            <!-- kim bilan  -->
             <label for="knowledge">Mars haqida bilgani:</label>
-            <textarea id="knowledge" name="knowledge"></textarea>
-            <!-- qachon  -->
+            <textarea
+              id="knowledge"
+              name="knowledge"
+              minlength="8"
+              maxlength="200"></textarea>
             <label for="when">Qachon uchmoqchi?</label>
             <input type="date" id="when" name="when" />
-            <!-- yuborish  -->
             <button type="submit">Yuborish</button>
           </fieldset>
         </form>
+      </section>
+    </main>
+    <!-- footer  -->
+    <footer class="footer">
+      <div class="footer-content">
+        <p>&copy; 2025 Marsga uchirish MCHJ. Barcha huquqlar himoyalangan.</p>
+        <ul class="social-links">
+          <li><a href="#">Telegram</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Facebook</a></li>
+        </ul>
       </div>
-    </div>
+    </footer>
   </body>
 </html>
