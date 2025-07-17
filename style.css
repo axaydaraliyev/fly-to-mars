@@ -118,6 +118,7 @@ li {
 
   #menu-toggle:checked + .burger + .navbar {
     display: flex;
+    align-items: end;
   }
 
   .burger {
