@@ -225,3 +225,32 @@ button:hover {
   background-color: #3e3838;
   color: #ccc;
 }
+/* footer  */
+.footer {
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 30px 20px;
+  text-align: center;
+  margin-top: 40px;
+}
+.footer-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.footer .social-links {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.footer .social-links a {
+  color: #ff7500;
+  text-decoration: none;
+  font-weight: bold;
+}
+.footer .social-links a:hover {
+text-decoration: underline;
+}
+
